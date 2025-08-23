@@ -47,22 +47,22 @@ export default function About() {
 
           {/* Skills Breakdown */}
           <div className="space-y-4 text-left max-w-3xl mx-auto md:mx-0 mb-6">
-            <p>
+            <p data-aos="fade-right">
               <span className="font-semibold text-orange-500">Front-End:</span>{" "}
               Expertise in building dynamic UIs with React, JavaScript (ES6+),
               and state management libraries.
             </p>
-            <p>
+            <p data-aos="fade-right">
               <span className="font-semibold text-orange-500">Back-End:</span>{" "}
               Skilled in developing secure and scalable server-side applications
               using Node.js and Express.js.
             </p>
-            <p>
+            <p data-aos="fade-right">
               <span className="font-semibold text-orange-500">Database:</span>{" "}
               Experience in designing and managing NoSQL databases with MongoDB
               and Mongoose.
             </p>
-            <p>
+            <p data-aos="fade-right">
               <span className="font-semibold text-orange-500">
                 Additional Tools:
               </span>{" "}
