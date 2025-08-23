@@ -1,3 +1,6 @@
+import Aos from "aos";
+import { useEffect } from "react";
+
 export default function Projects() {
   const projects = [
     {
@@ -58,11 +61,15 @@ export default function Projects() {
       link: "#",
     },
   ];
+  useEffect(() => {
+    Aos.init({ duration: 2000 }); // 1s fade animation
+  }, []);
 
   return (
     <section
       id="projects"
-      className="py-20 bg-white text-black max-w-6xl mx-auto px-6"
+      className="py-20 bg-white text-black max-w-6xl mx-auto px-6 mb-20"
+      data-aos="fade-up"
     >
       <h2 className="text-4xl font-bold text-center text-orange-500 mb-12">
         Projects
@@ -73,6 +80,8 @@ export default function Projects() {
           <div
             key={index}
             className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col justify-between"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
           >
             {/* Project Image */}
             <a href={project.link} target="_blank" rel="noreferrer">

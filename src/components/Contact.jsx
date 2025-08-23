@@ -1,9 +1,13 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import emailjs from "emailjs-com";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import Aos from "aos";
 
 export default function Contact() {
   const form = useRef();
+  useEffect(() => {
+    Aos.init({ duration: 2000 }); // 1s fade animation
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -32,6 +36,7 @@ export default function Contact() {
     <section
       id="contact"
       className="py-20 bg-gray-50 text-black max-w-6xl mx-auto px-6"
+      data-aos="fade-up"
     >
       <h2 className="text-4xl font-bold text-center text-orange-500 mb-12">
         Contact Me
@@ -43,6 +48,7 @@ export default function Contact() {
           ref={form}
           className="bg-white p-6 rounded-lg shadow-md space-y-4"
           onSubmit={sendEmail}
+          data-aos="flip-right"
         >
           <input
             type="text"
@@ -74,7 +80,10 @@ export default function Contact() {
         </form>
 
         {/* Social Links */}
-        <div className="flex flex-col items-center justify-center space-y-6">
+        <div
+          className="flex flex-col items-center justify-center space-y-6"
+          data-aos="flip-left"
+        >
           <p className="text-lg text-gray-700 text-center">
             You can also connect with me on:
           </p>

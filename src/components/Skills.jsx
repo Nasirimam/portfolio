@@ -9,6 +9,8 @@ import {
 } from "react-icons/si";
 import { MdApi } from "react-icons/md";
 import { VscVscode } from "react-icons/vsc";
+import { useEffect } from "react";
+import Aos from "aos";
 
 export default function Skills() {
   const skills = [
@@ -26,10 +28,15 @@ export default function Skills() {
     { name: "REST APIs", icon: <MdApi className="text-gray-700" /> },
   ];
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 }); // 1s fade animation
+  }, []);
+
   return (
     <section
       id="skills"
       className="py-20 bg-gray-50 text-black max-w-6xl mx-auto px-6"
+      data-aos="fade-up"
     >
       <h2 className="text-4xl font-bold text-center text-orange-500 mb-12">
         Skills
@@ -40,6 +47,7 @@ export default function Skills() {
           <div
             key={index}
             className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
+            data-aos="flip-left"
           >
             <div className="text-5xl mb-3">{skill.icon}</div>
             <p className="text-lg font-semibold">{skill.name}</p>
@@ -59,6 +67,7 @@ export default function Skills() {
             src="https://github-readme-stats.vercel.app/api?username=Nasirimam&show_icons=true&theme=orange&hide_border=true"
             alt="GitHub Stats"
             className="mx-auto shadow-lg rounded-lg"
+            data-aos="flip-right"
           />
 
           {/* Top Languages Card */}
@@ -66,6 +75,7 @@ export default function Skills() {
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nasirimam&layout=compact&theme=orange&hide_border=true"
             alt="Top Languages"
             className="mx-auto shadow-lg rounded-lg"
+            data-aos="flip-left"
           />
         </div>
       </div>

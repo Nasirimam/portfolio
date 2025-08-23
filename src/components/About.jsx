@@ -1,10 +1,17 @@
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 }); // 1s fade animation
+  }, []);
   return (
     <section
       id="about"
       className="py-20 bg-white text-black max-w-6xl mx-auto px-6"
+      data-aos="fade-up"
     >
       <h2 className="text-4xl font-bold text-center text-orange-500 mb-12">
         About Me
