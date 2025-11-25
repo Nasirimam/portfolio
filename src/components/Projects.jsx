@@ -25,6 +25,27 @@ export default function Projects() {
       link: "https://voting-app-delta-ecru.vercel.app/",
     },
     {
+      title: "NaStream – Chat & Video Call App",
+      description:
+        "A real-time chat and video calling application built using MERN stack with WebRTC and Socket.io for fast, low-latency communication.",
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "WebRTC",
+        "Socket.io",
+        "JWT",
+        "Video Call",
+        "Real-Time Chat",
+        "Responsive",
+      ],
+      image: "/nastream.png",
+      demo: "#",
+      github: "https://github.com/Nasirimam/chat",
+      link: "https://chat-app-three-blond.vercel.app/",
+    },
+    {
       title: "Good Food",
       description:
         "Enjoy a hassle-free way to order food. Create an account, add items to your persistent cart, and checkout quickly through a simple, user-friendly interface.",
@@ -43,22 +64,6 @@ export default function Projects() {
       demo: "https://drive.google.com/file/d/1IWD-rN5k36ExOGFJA0HIFy4BoIEYBmwf/view?usp=sharing",
       github: "https://github.com/Nasirimam/R.P.S.N-Vacation",
       link: "https://rpsn-vacations.netlify.app/",
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "My personal portfolio built with React and Tailwind CSS to showcase projects, skills, and contact info.",
-      tech: [
-        "React",
-        "Tailwind CSS",
-        "JavaScript",
-        "React-Scroll",
-        "Responsive",
-      ],
-      image: "/portimg.png",
-      demo: "#",
-      github: "#",
-      link: "#",
     },
   ];
   useEffect(() => {

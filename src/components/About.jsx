@@ -5,8 +5,9 @@ import { useEffect } from "react";
 
 export default function About() {
   useEffect(() => {
-    AOS.init({ duration: 2000 }); // 1s fade animation
+    AOS.init({ duration: 2000 });
   }, []);
+
   return (
     <section
       id="about"
@@ -30,49 +31,58 @@ export default function About() {
 
         {/* About Text */}
         <div className="text-center md:text-left">
-          <p className="text-lg text-gray-700 mb-4">
-            Hi! I’m <span className="font-semibold">Nasir Imam</span>, a
-            passionate{" "}
-            <span className="text-orange-500">MERN Stack Developer</span>. I
-            love crafting responsive, user-friendly, and scalable web
-            applications. My focus is on delivering clean code and seamless user
-            experiences.
-          </p>
-
           <p className="text-lg text-gray-700 mb-6">
-            When I’m not coding, I enjoy exploring new technologies, learning
-            problem-solving techniques, and contributing to open-source
-            projects.
+            Hi! I’m <span className="font-semibold">Nasir Imam</span>, a
+            passionate
+            <span className="text-orange-500">
+              {" "}
+              Full Stack Developer (Python + MERN)
+            </span>
+            who loves building scalable, user-friendly, and high-performance web
+            applications. I enjoy working with Python, SQL, and the MERN stack
+            to create real-time features, clean architectures, and smooth user
+            experiences. I’m always learning new technologies, exploring
+            problem-solving techniques, and improving my skills to build better
+            digital solutions.
           </p>
 
           {/* Skills Breakdown */}
           <div className="space-y-4 text-left max-w-3xl mx-auto md:mx-0 mb-6">
             <p data-aos="fade-right">
               <span className="font-semibold text-orange-500">Front-End:</span>{" "}
-              Expertise in building dynamic UIs with React, JavaScript (ES6+),
-              and state management libraries.
+              Expertise in creating responsive and dynamic UIs with React,
+              JavaScript (ES6+), and Tailwind CSS, along with strong
+              understanding of state management.
             </p>
+
             <p data-aos="fade-right">
               <span className="font-semibold text-orange-500">Back-End:</span>{" "}
-              Skilled in developing secure and scalable server-side applications
-              using Node.js and Express.js.
+              Experience building secure and scalable APIs using Python
+              (Django/Flask), Node.js, and Express.js, with a strong focus on
+              backend architecture.
             </p>
+
             <p data-aos="fade-right">
               <span className="font-semibold text-orange-500">Database:</span>{" "}
-              Experience in designing and managing NoSQL databases with MongoDB
-              and Mongoose.
+              Hands-on experience with SQL databases (MySQL/PostgreSQL) and
+              NoSQL databases like MongoDB, including schema design and
+              optimization.
             </p>
+
             <p data-aos="fade-right">
               <span className="font-semibold text-orange-500">
                 Additional Tools:
               </span>{" "}
-              Proficient with Git, RESTful APIs, HTML5, CSS3, and Tailwind CSS.
+              Proficient with Git/GitHub, RESTful APIs, Socket.io, WebRTC,
+              Firebase, HTML5, CSS3, and deployment tools such as Vercel and
+              Netlify.
             </p>
           </div>
 
           <p className="mt-4 text-lg text-gray-700">
-            I am actively looking for a role where I can solve challenging
-            problems and continue to grow as a developer.
+            I am actively looking for an opportunity where I can contribute to
+            real-world projects, use modern technologies, and grow as a full
+            stack developer.
           </p>
 
           <Link

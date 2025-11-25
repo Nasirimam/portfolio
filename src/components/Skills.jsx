@@ -11,21 +11,27 @@ import { MdApi } from "react-icons/md";
 import { VscVscode } from "react-icons/vsc";
 import { useEffect } from "react";
 import Aos from "aos";
+import { FaPython } from "react-icons/fa";
+import { SiFastapi, SiPostgresql, SiDjango } from "react-icons/si";
 
 export default function Skills() {
   const skills = [
+    { name: "Python", icon: <FaPython className="text-blue-400" /> },
+    { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
+    { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
     { name: "React", icon: <FaReact className="text-blue-500" /> },
     { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
-    { name: "Express.js", icon: <SiExpress className="text-gray-800" /> },
+    { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-    { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
     { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
-    { name: "HTML5", icon: <FaHtml5 className="text-red-500" /> },
-    { name: "Redux", icon: <SiRedux className="text-purple-600" /> },
-    { name: "VS Code", icon: <VscVscode className="text-blue-600" /> },
-    { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
     { name: "REST APIs", icon: <MdApi className="text-gray-700" /> },
+    { name: "Express.js", icon: <SiExpress className="text-gray-800" /> },
+    { name: "FastAPI", icon: <SiFastapi className="text-teal-500" /> },
+    { name: "Django", icon: <SiDjango className="text-green-700" /> },
+    { name: "Redux", icon: <SiRedux className="text-purple-600" /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
+    { name: "HTML5", icon: <FaHtml5 className="text-red-500" /> },
+    { name: "VS Code", icon: <VscVscode className="text-blue-600" /> },
   ];
 
   useEffect(() => {
@@ -53,31 +59,6 @@ export default function Skills() {
             <p className="text-lg font-semibold">{skill.name}</p>
           </div>
         ))}
-      </div>
-
-      {/* GitHub Stats Section */}
-      <div className="mt-12 space-y-6 text-center">
-        <h3 className="text-4xl font-bold text-center text-orange-500 mb-12">
-          GitHub Stats
-        </h3>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
-          {/* Stats Card */}
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=Nasirimam&show_icons=true&theme=orange&hide_border=true"
-            alt="GitHub Stats"
-            className="mx-auto shadow-lg rounded-lg"
-            data-aos="flip-right"
-          />
-
-          {/* Top Languages Card */}
-          <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nasirimam&layout=compact&theme=orange&hide_border=true"
-            alt="Top Languages"
-            className="mx-auto shadow-lg rounded-lg"
-            data-aos="flip-left"
-          />
-        </div>
       </div>
     </section>
   );

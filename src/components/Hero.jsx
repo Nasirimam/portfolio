@@ -15,13 +15,16 @@ export default function Hero() {
       </h2>
 
       <p className="text-gray-600 max-w-xl mb-6">
-        Passionate about building modern web applications using MongoDB,
-        Express.js, React, and Node.js (MERN stack). I enjoy creating scalable,
-        fast, and user-friendly solutions with clean code and optimized
-        performance. Skilled in implementing RESTful APIs, state management
-        (Redux), and responsive UI with Tailwind CSS. Enthusiastic about
-        problem-solving, collaborating in agile teams, and continuously learning
-        new technologies to deliver impactful digital experiences.
+        Passionate Full Stack Developer skilled in building modern web
+        applications using Python, SQL, and the MERN stack (MongoDB, Express.js,
+        React, Node.js). I enjoy creating scalable, fast, and user-friendly
+        solutions with clean architecture and optimized performance. Experienced
+        in developing RESTful APIs, real-time communication features (Socket.io,
+        WebRTC), and responsive UI using Tailwind CSS and React. I focus on
+        writing maintainable code, solving complex problems, and delivering
+        smooth user experiences. Enthusiastic about learning new technologies,
+        collaborating in agile teams, and building impactful digital products
+        that make a real difference.
       </p>
       <Link
         to="projects"
